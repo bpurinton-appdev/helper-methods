@@ -2,7 +2,7 @@ class MoviesController < ApplicationController
   def new
     @the_movie = Movie.new
 
-    render template: "movies/new.html.erb"
+    render template: "movies/new"
   end
 
   def index
@@ -16,7 +16,7 @@ class MoviesController < ApplicationController
       end
 
       format.html do
-        render({ :template => "movies/index.html.erb" })
+        render({ :template => "movies/index" })
       end
     end
   end
