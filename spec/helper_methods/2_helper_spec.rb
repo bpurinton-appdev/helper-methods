@@ -6,6 +6,6 @@ describe "movies/index" do
     template_path = Rails.root.join("app", "views", template_name)
     template_contents = open(template_path).read
     expect(template_contents).to match(/<%=.*link_to.*Add a new movie.*%>/),
-      "Expected to find `link_to` method with text 'Show details' in movies/index.html.erb"
+      "Expected to find `link_to` method with text 'Add a new movie' in movies/index.html.erb"
   end
 end
