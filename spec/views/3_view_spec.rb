@@ -7,7 +7,8 @@ describe "movies/index" do
       Movie.create(title: "My title 2", description: "My description 2")
     ])
 
-    p render
+    # p render
+    render
 
     expect(rendered).not_to match(/<%.*%>/)
   end
